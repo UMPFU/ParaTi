@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textinho</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120vh;
+            background-color: #c5536c;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            background-color: #fff;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button-yes {
+            background-color: #74d677;
+            color: #fff;
+        }
+        .button-yes:hover {
+            background-color: #74d677;
+        }
+        .button-no {
+            background-color: #f5655b;
+            color: #fff;
+        }
+        .button-no:hover {
+            background-color: #e91303;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Para ti, leia.</h1>
+        <p>Aline,</p>
+        <p>
+            Hoje é um dia especial, um dia que marca a celebração de você – sua vida, sua essência, e tudo o que você representa. Eu queria aproveitar este momento para expressar o quanto você significa para mim e para todos que têm a sorte de conhecê-la.
+            Desde o momento em que te conheci, percebi que você tem uma luz única, uma capacidade de iluminar qualquer ambiente com seu sorriso e sua presença calorosa. Sua bondade, generosidade e capacidade de amar incondicionalmente são raridades no mundo de hoje, e eu me sinto imensamente grato por poder testemunhar isso de perto.
+            Você tem uma força interior que me inspira diariamente. Nos dias difíceis, é seu otimismo que me levanta, e nos momentos de alegria, é sua risada que torna tudo mais doce.
+            Mais do que tudo, amo a maneira como você ama. Seu coração é vasto e acolhedor, e você tem uma maneira especial de fazer com que todos ao seu redor se sintam valorizados e importantes. Sua amizade é um tesouro inestimável, e seu amor é um presente que agradeço todos os dias.
+            Neste dia que é todo seu, quero que saiba o quanto você é amada e apreciada. Que este novo ano de vida traga ainda mais felicidade, realizações e momentos inesquecíveis. E que eu possa estar ao seu lado, celebrando cada vitória e apoiando em cada desafio.
+            Parabéns, minha querida. Que sua vida continue a ser repleta de luz e amor, assim como você ilumina a vida de todos nós.
+        </p>
+        <p>Com todo o carinho, te amo.&#128153;</p>
+        <p>Vai querer algum presente? (Duvido conseguir clicar no "Sim" hahaha)</p>
+        <div class="buttons">
+            <button class="button button-yes" id="yesBtn">Sim</button>
+            <button class="button button-no" id="noBtn">Não</button>
+        </div>
+    </div>
+    <script>
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+
+        yesBtn.addEventListener('mouseover', () => {
+            const offsetX = Math.random() * 300 - 150;
+            const offsetY = Math.random() * 300 - 150;
+            yesBtn.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+        });
+
+        noBtn.addEventListener('click', () => {
+            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+        });
+    </script>
+</body>
+</html>
